@@ -1,7 +1,7 @@
 .title {
 	position: relative;
 	display: inline-block;
-	color: var(--main-color-darkest);
+
 	font-size: 4rem;
 	&::before {
 		position: absolute;
@@ -10,7 +10,7 @@
 		content: '';
 		width: 30%;
 		height: 2px;
-		background-color: var(--main-color-darkest);
+		background-color: #000;
 	}
 }
 

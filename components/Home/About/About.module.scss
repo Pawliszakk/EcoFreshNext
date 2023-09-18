@@ -1,4 +1,40 @@
 .about {
-	height: 200vh;
-	background-color: var(--main-color);
+	background-color: var(--main-color-darker);
+}
+
+.text {
+	display: block;
+	max-width: 300px;
+	margin: 3rem auto;
+	font-size: 1.4rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 3rem;
+}
+
+@media (min-width: 576px) {
+	.container {
+		flex-flow: wrap row;
+		gap: 3rem;
+	}
+	.text {
+		font-size: 1.5rem;
+	}
+}
+@media (min-width: 992px) {
+	.text {
+		max-width: 400px;
+		font-size: 1.7rem;
+	}
+}
+@media (min-width: 1200px) {
+	.text {
+		max-width: 500px;
+		font-size: 1.8rem;
+	}
 }

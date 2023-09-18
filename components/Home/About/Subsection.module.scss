@@ -1,0 +1,20 @@
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 3rem 0;
+	width: 300px;
+	padding: 3em 1em;
+	background-color: var(--main-color-darkest);
+	svg {
+		// color: #fff;
+		width: 70px;
+		height: 70px;
+	}
+	p {
+		margin-top: 1em;
+		font-size: 1.8rem;
+		// color: #fff;
+	}
+}

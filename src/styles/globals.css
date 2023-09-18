@@ -34,8 +34,9 @@ body {
 }
 :root {
 	--main-color: #a3cf44;
-	--main-color-darker: #8db832;
-	--main-color-darkest: #5e7c1e;
+	--main-color-darker: #8bb62f;
+	--main-color-nav: #83aa2e;
+	--main-color-darkest: #6b8d22;
 }
 section {
 	overflow-x: hidden;
