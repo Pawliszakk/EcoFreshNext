@@ -5,8 +5,6 @@ const Offer = () => {
 	return (
 		<section className={classes.offer} id="offer">
 			<SectionTitle>Oferta</SectionTitle>
-
-
 		</section>
 	);
 };
