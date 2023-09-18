@@ -1,0 +1,91 @@
+.decoration {
+	position: relative;
+	height: 70vh;
+	background-image: url('/assets/hero/decoration.JPG');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 2.2rem;
+		color: #fff;
+	}
+	z-index: 0;
+}
+.shadow {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: -1;
+}
+.divider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(146% + 1.3px);
+		height: 163px;
+	}
+}
+
+.shapeFill {
+	fill: var(--main-color-darker);
+}
+.divider2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(198% + 1.3px);
+		height: 163px;
+	}
+}
+
+.shapeFill2 {
+	fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+	.divider2 {
+		svg {
+			width: calc(206% + 1.3px);
+			height: 96px;
+		}
+	}
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+	.divider svg {
+		width: calc(168% + 1.3px);
+		height: 124px;
+	}
+}
+
+@media (min-width: 576px) {
+	.decoration {
+		h2 {
+			font-size: 2.6rem;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.decoration {
+		h2 {
+			font-size: 3.5rem;
+		}
+	}
+}
