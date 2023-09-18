@@ -8,7 +8,9 @@ const Nav = () => {
 	return (
 		<nav className={classes.nav}>
 			<div className={classes.logo}>
-				<img src="/assets/logo/logo.png" alt="Logo Hurtowni Eco Fresh" />
+				<a href="#home">
+					<img src="/assets/logo/logo.png" alt="Logo Hurtowni Eco Fresh" />
+				</a>
 			</div>
 			<NavList isActive={isOpen} />
 			<div className={classes.burger}>

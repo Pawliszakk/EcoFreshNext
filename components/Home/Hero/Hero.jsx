@@ -1,15 +1,34 @@
 import classes from './Hero.module.scss';
 import { motion } from 'framer-motion';
 import { BsFillArrowDownCircleFill } from 'react-icons/bs';
+import SlideAnimation from '../../UI/Animations/SlideAnimation';
+
 const Hero = () => {
 	return (
-		<header className={classes.hero}>
+		<header className={classes.hero} id="home">
 			<div className={classes.shadow}></div>
-			<p>Hurtownia owoców i warzyw</p>
-			<h1>Eco Fresh Łabunie </h1>
-			<motion.div className={classes.icon}>
+			<div className={classes.text}>
+				{' '}
+				<SlideAnimation left>
+					<p>Hurtownia owoców i warzyw</p>
+				</SlideAnimation>
+				<SlideAnimation>
+					<h1>Eco Fresh Łabunie </h1>
+				</SlideAnimation>
+			</div>
+
+			<motion.a
+				className={classes.icon}
+				href="#about"
+				whileTap={{ scale: 0.8 }}
+				whileHover={{ scale: 1.1 }}
+				initial={{ opacity: 0, bottom: 0 }}
+				animate={{ opacity: 1, bottom: '10vh' }}
+				transition={{ delay: 0.5 }}
+			>
 				<BsFillArrowDownCircleFill />
-			</motion.div>
+			</motion.a>
+
 			<div className={classes.divider}>
 				<svg
 					data-name="Layer 1"
