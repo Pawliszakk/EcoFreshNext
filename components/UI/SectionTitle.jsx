@@ -1,7 +1,11 @@
 import classes from './SectionTitle.module.scss';
 
-const SectionTitle = ({ children }) => {
-	return <h2 className={classes.title}>{children}</h2>;
+const SectionTitle = ({ children, white }) => {
+	return (
+		<h2 className={`${classes.title} ${white ? classes.white : null}`}>
+			{children}
+		</h2>
+	);
 };
 
 export default SectionTitle;

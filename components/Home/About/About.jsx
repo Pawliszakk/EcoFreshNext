@@ -4,7 +4,7 @@ import classes from './About.module.scss';
 const About = () => {
 	return (
 		<section className={classes.about} id="about">
-			<SectionTitle>O nas</SectionTitle>
+			<SectionTitle white>O nas</SectionTitle>
 		</section>
 	);
 };
