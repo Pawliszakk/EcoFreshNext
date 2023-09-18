@@ -26,6 +26,7 @@
 		background-color: var(--main-color);
 		transform: translateX(120%);
 		transition: transform 0.4s;
+		z-index: 22;
 		li {
 			margin: 3rem auto;
 			a {
