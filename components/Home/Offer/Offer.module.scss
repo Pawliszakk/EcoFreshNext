@@ -1,3 +1,61 @@
 .offer {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	p {
+		font-size: 1.6rem;
+		max-width: 300px;
+		margin: 2em auto;
+		a {
+			text-decoration: underline;
+			position: relative;
+			z-index: 5;
+			transition: color 0.3s;
+			&::before {
+				position: absolute;
+				content: '';
+				height: 100%;
+				width: 100%;
+				background-color: #0303e4;
+				transform-origin: bottom;
+				transform: scaleY(0);
+				transition: transform 0.3s;
+				z-index: -1;
+			}
+			&:hover::before {
+				transform: scaleY(1);
+			}
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media (min-width: 400px) {
+	.offer {
+		position: relative;
+		p {
+			font-size: 1.7rem;
+			max-width: 380px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.offer {
+		p {
+			font-size: 1.9rem;
+			max-width: 500px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.offer {
+		p {
+			font-size: 2rem;
+			max-width: 600px;
+		}
+	}
 }
