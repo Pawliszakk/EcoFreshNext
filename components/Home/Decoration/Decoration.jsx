@@ -6,7 +6,7 @@ const Decoration = () => {
 			<div className={classes.shadow}></div>
 			<h2>Świeżość i jakość - możesz nam zaufać!</h2>
 
-			<div class={classes.divider}>
+			<div className={classes.divider}>
 				<svg
 					data-name="Layer 1"
 					xmlns="http://www.w3.org/2000/svg"
