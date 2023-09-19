@@ -77,6 +77,7 @@ const CarouselComponent = () => {
 					))}
 				</div>
 			</div>
+			
 		</>
 	);
 };

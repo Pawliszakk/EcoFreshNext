@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-bottom: 7rem;
 	p {
 		font-size: 1.6rem;
 		max-width: 300px;
@@ -32,6 +33,25 @@
 			}
 		}
 	}
+}
+
+.divider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(235% + 1.3px);
+		height: 110px;
+	}
+}
+
+.shapeFill {
+	fill: var(--main-color-darker);
 }
 
 @media (min-width: 400px) {
