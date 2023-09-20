@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100%;
 	background-color: var(--main-color-nav);
-	height: 10vh;
+	height: 9vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -18,6 +18,26 @@
 .burger {
 	display: none;
 }
+
+.divider {
+	position: absolute;
+	bottom: -32px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(133% + 1.3px);
+		height: 32px;
+	}
+}
+
+.shapeFill {
+	fill: var(--main-color-nav);
+}
+
 @media (max-width: 768px) {
 	.burger {
 		display: block;
