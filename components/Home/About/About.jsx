@@ -25,7 +25,7 @@ const About = () => {
 			<div className={classes.container}>
 				{' '}
 				{subsections.map((s, i) => (
-					<Subsection key={i} icon={s.icon} text={s.text} />
+					<Subsection key={i} index={i} icon={s.icon} text={s.text} />
 				))}
 			</div>
 		</section>

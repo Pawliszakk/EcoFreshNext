@@ -1,11 +1,13 @@
+import SlideFromTop from '../../UI/Animations/SlideFromTop';
 import classes from './Subsection.module.scss';
-
-const Subsection = ({ icon, text }) => {
+import { motion } from 'framer-motion';
+const Subsection = ({ icon, text, index }) => {
 	return (
-		<div className={classes.box}>
+		<SlideFromTop className={classes.box} index={index}>
+			{' '}
 			{icon}
 			<p>{text}</p>
-		</div>
+		</SlideFromTop>
 	);
 };
 
