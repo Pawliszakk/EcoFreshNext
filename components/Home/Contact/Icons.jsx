@@ -30,7 +30,7 @@ const Icons = () => {
 	return (
 		<>
 			{contactData.map((d, i) => (
-				<div className={classes.box}>
+				<div key={i} className={classes.box}>
 					<div className={classes.heading}>
 						<div className={classes.icon}>{d.icon}</div>
 						<h3>{d.heading}</h3>
