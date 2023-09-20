@@ -1,7 +1,7 @@
 import classes from './NavList.module.scss';
 import { motion } from 'framer-motion';
 
-const NavList = ({ isActive }) => {
+const NavList = ({ isActive, onToggle }) => {
 	const linksData = [
 		{
 			text: 'O nas',
@@ -20,7 +20,7 @@ const NavList = ({ isActive }) => {
 	return (
 		<ul className={`${classes.list} ${isActive ? classes.active : null} `}>
 			{linksData.map((link, i) => (
-				<motion.li key={i}>
+				<motion.li key={i} onClick={onToggle}>
 					<a href={link.link}>{link.text}</a>
 				</motion.li>
 			))}

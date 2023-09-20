@@ -5,6 +5,8 @@ import Hamburger from 'hamburger-react';
 const Nav = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
+	const navToggleHandler = () => setIsOpen((prev) => !prev);
+
 	return (
 		<nav className={classes.nav}>
 			<div className={classes.logo}>
@@ -12,9 +14,9 @@ const Nav = () => {
 					<img src="/assets/logo/logo.png" alt="Logo Hurtowni Eco Fresh" />
 				</a>
 			</div>
-			<NavList isActive={isOpen} />
+			<NavList isActive={isOpen} onToggle={navToggleHandler} />
 			<div className={classes.burger}>
-				<Hamburger toggled={isOpen} toggle={setIsOpen} />
+				<Hamburger toggled={isOpen} toggle={navToggleHandler} />
 			</div>
 		</nav>
 	);
