@@ -35,8 +35,8 @@ const Icons = () => {
 						<div className={classes.icon}>{d.icon}</div>
 						<h3>{d.heading}</h3>
 					</div>
-					{d.text.map((text) => (
-						<p>{text}</p>
+					{d.text.map((text, i) => (
+						<p key={i}>{text}</p>
 					))}
 				</div>
 			))}
