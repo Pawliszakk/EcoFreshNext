@@ -4,6 +4,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { AiFillClockCircle } from 'react-icons/ai';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdMail } from 'react-icons/md';
+import SlideFromTop from '../../UI/Animations/SlideFromTop';
+
 const Icons = () => {
 	const contactData = [
 		{
@@ -30,7 +32,7 @@ const Icons = () => {
 	return (
 		<>
 			{contactData.map((d, i) => (
-				<div key={i} className={classes.box}>
+				<SlideFromTop key={i} className={classes.box} index={i}>
 					<div className={classes.heading}>
 						<div className={classes.icon}>{d.icon}</div>
 						<h3>{d.heading}</h3>
@@ -38,7 +40,7 @@ const Icons = () => {
 					{d.text.map((text, i) => (
 						<p key={i}>{text}</p>
 					))}
-				</div>
+				</SlideFromTop>
 			))}
 		</>
 	);

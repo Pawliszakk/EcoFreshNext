@@ -37,6 +37,7 @@ const Work = () => {
 				{workData.map((w, i) => (
 					<Card
 						key={i}
+						index={i}
 						heading={w.heading}
 						text={w.text}
 						image={w.image}
