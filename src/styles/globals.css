@@ -37,6 +37,7 @@ body {
 	--main-color-darker: #8ec517;
 	--main-color-nav: #83aa2e;
 	--main-color-darkest: #7baa15;
+	--hover-color: #517408;
 }
 section {
 	overflow-x: hidden;
