@@ -1,4 +1,43 @@
 .work {
 	position: relative;
 	background-color: var(--main-color-darker);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 6rem;
+}
+.container {
+	margin: 8rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.divider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	svg {
+		position: relative;
+		display: block;
+		width: calc(111% + 1.3px);
+		height: 56px;
+	}
+}
+
+.shapeFill {
+	fill: #ffffff;
+}
+
+@media (min-width: 992px) {
+	.container {
+		flex-flow: row wrap;
+		max-width: 1200px;
+	}
 }

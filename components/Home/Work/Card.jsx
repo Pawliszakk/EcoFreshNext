@@ -9,6 +9,7 @@ const Card = ({ image, heading, text, alt, icon }) => {
 					{heading} {icon}
 				</h2>
 				<p>{text}</p>
+				<a href="#contact">Skontaktuj się</a>
 			</div>
 		</div>
 	);
