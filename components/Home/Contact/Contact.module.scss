@@ -11,3 +11,15 @@
 .icons {
 	margin: 3rem 0;
 }
+
+@media(min-width: 992px) {
+    .map{
+        width: 60%;
+        height: 500px;
+    }
+    .icons{
+        display: flex;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
