@@ -1,0 +1,44 @@
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--main-color-darker);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+	font-size: 2rem;
+	color: #fff;
+}
+.spinner {
+	height: 120px;
+	width: 120px;
+	border: 6px solid white;
+	border-color: white transparent white transparent;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: 576px) {
+	.background {
+		font-size: 3rem;
+	}
+}
+@media (min-width: 992px) {
+	.background {
+		font-size: 4rem;
+	}
+}
