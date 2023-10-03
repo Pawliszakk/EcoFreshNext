@@ -1,7 +1,15 @@
 import SlideFromTop from '../../UI/Animations/SlideFromTop';
 import classes from './Card.module.scss';
+import { SingleWork } from '../../../src/types/app';
 
-const Card = ({ image, heading, text, alt, icon, index }) => {
+const Card: React.FC<SingleWork> = ({
+	image,
+	heading,
+	text,
+	alt,
+	icon,
+	index,
+}) => {
 	return (
 		<SlideFromTop className={classes.card} index={index}>
 			<img src={image} alt={alt} />

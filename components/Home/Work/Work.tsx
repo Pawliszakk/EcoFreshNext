@@ -3,9 +3,12 @@ import { FaPeopleGroup, FaTruckFast } from 'react-icons/fa6';
 import SectionTitle from '../../UI/SectionTitle';
 import Card from './Card';
 import classes from './Work.module.scss';
+import { SingleWork } from '../../../src/types/app';
+
+
 
 const Work = () => {
-	const workData = [
+	const workData: SingleWork[] = [
 		{
 			image: '/assets/work/quality.jpg',
 			alt: 'Owoce podane na drewnianej podstawce',
