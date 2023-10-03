@@ -1,7 +1,12 @@
 import classes from './NavList.module.scss';
 import { motion } from 'framer-motion';
 
-const NavList = ({ isActive, onToggle }) => {
+interface NavListProps {
+	isActive: boolean;
+	onToggle: () => void;
+}
+
+const NavList: React.FC<NavListProps> = ({ isActive, onToggle }) => {
 	const linksData = [
 		{
 			text: 'O nas',

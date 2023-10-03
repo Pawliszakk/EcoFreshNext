@@ -1,8 +1,13 @@
+import { ReactNode } from 'react';
 import Spinner from '../UI/Spinner';
 import Footer from './footer/footer';
 import Nav from './nav/Nav';
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+	children: ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
 		<>
 			<Spinner />

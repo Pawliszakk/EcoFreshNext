@@ -3,7 +3,12 @@ import useEmblaCarousel from 'embla-carousel-react';
 import classes from './Carousel.module.scss';
 import Autoplay from 'embla-carousel-autoplay';
 
-const products = [
+type Product = {
+	image: string;
+	name: string;
+};
+
+const products: Product[] = [
 	{
 		image: '/assets/products/apple.jpg',
 		name: 'Jabłka',
@@ -77,7 +82,6 @@ const CarouselComponent = () => {
 					))}
 				</div>
 			</div>
-			
 		</>
 	);
 };

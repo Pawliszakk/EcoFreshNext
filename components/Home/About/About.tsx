@@ -4,8 +4,14 @@ import { FaCarrot, FaWallet } from 'react-icons/fa';
 import { BsTruck } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import Subsection from './Subsection';
+
+type Subsection = {
+	icon: JSX.Element;
+	text: string;
+};
+
 const About = () => {
-	const subsections = [
+	const subsections: Subsection[] = [
 		{ icon: <FaCarrot />, text: 'Świeży i smaczny towar' },
 		{ icon: <FaWallet />, text: 'Konkurencyjne ceny' },
 		{ icon: <BsTruck />, text: 'Transport do klienta' },

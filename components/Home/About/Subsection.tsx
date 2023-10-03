@@ -1,7 +1,13 @@
 import SlideFromTop from '../../UI/Animations/SlideFromTop';
 import classes from './Subsection.module.scss';
-import { motion } from 'framer-motion';
-const Subsection = ({ icon, text, index }) => {
+
+interface SubsectionProps {
+	icon: JSX.Element;
+	text: string;
+	index: number;
+}
+
+const Subsection: React.FC<SubsectionProps> = ({ icon, text, index }) => {
 	return (
 		<SlideFromTop className={classes.box} index={index}>
 			{' '}

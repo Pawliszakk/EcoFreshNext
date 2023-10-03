@@ -1,6 +1,12 @@
 import classes from './CarouselItem.module.scss';
 import { motion } from 'framer-motion';
-const CarouselItem = ({ image, name }) => {
+
+interface CarouselItemProps {
+	image: string;
+	name: string;
+}
+
+const CarouselItem: React.FC<CarouselItemProps> = ({ image, name }) => {
 	return (
 		<div className={classes.box}>
 			<img src={image} alt={name} />
