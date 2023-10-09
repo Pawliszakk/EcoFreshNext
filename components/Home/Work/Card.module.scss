@@ -33,7 +33,6 @@
 	}
 	a {
 		left: 50%;
-		transform: translateX(-50%);
 		bottom: 1em;
 		font-size: 2rem;
 		background-color: #5c8309;
@@ -94,6 +93,7 @@
 		}
 		a {
 			position: absolute;
+			transform: translateX(-50%);
 			bottom: 1em;
 			min-width: 75%;
 			font-size: 2rem;
