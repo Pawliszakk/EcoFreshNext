@@ -12,7 +12,7 @@ const Card: React.FC<SingleWork> = ({
 }) => {
 	return (
 		<SlideFromTop className={classes.card} index={index}>
-			<img src={image} alt={alt} />
+			<img src={image} alt={alt} loading="lazy" />
 			<div className={classes.text}>
 				<h2>
 					{heading} {icon}

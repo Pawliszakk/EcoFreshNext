@@ -9,7 +9,7 @@ interface CarouselItemProps {
 const CarouselItem: React.FC<CarouselItemProps> = ({ image, name }) => {
 	return (
 		<div className={classes.box}>
-			<img src={image} alt={name} />
+			<img src={image} alt={name} loading="lazy" />
 			<div className={classes.name}>
 				<h2>{name}</h2>
 				<motion.a whileTap={{ scale: 0.8 }} href="#contact">

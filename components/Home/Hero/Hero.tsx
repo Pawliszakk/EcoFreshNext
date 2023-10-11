@@ -27,6 +27,7 @@ const Hero = () => {
 				transition={{ delay: 0.5 }}
 			>
 				<BsFillArrowDownCircleFill />
+				<span>Przejdź niżej</span>
 			</motion.a>
 
 			<div className={classes.divider}>

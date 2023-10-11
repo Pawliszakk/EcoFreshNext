@@ -14,6 +14,7 @@ const Contact = () => {
 						style={{ border: 0 }}
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
+						title="Mapa Lokalizacji Hurtowni Eco Fresh"
 					></iframe>
 				</SlideAnimation>
 				<div className={classes.icons}>
