@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 interface ShowAnimationProps {
 	children: ReactNode;
@@ -15,6 +15,7 @@ const ShowAnimation: React.FC<ShowAnimationProps> = ({
 			className={className}
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
+			viewport={{ once: true }}
 		>
 			{children}{' '}
 		</motion.div>
